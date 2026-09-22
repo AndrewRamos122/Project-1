@@ -1,2 +1,1 @@
-# Project-1
-This is my website for project 1 for COMP 484
+ https://andrewramos122.github.io/Project-1/
