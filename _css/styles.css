@@ -1,0 +1,172 @@
+/*
+   Yu-Gi-Oh! Hobby Website
+   Main external stylesheet for every page in this project.
+   The colors are inspired by dark duel arenas, gold card borders,
+   and the blue/purple colors commonly used in trading card designs.
+*/
+
+:root {
+  --ink: #17152b;
+  --night: #0e1020;
+  --purple: #3f2a72;
+  --gold: #f2c14e;
+  --gold-light: #ffe9a6;
+  --paper: #fffaf0;
+  --muted: #d9d5e9;
+  --accent: #55c2d8;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: #5b23e7;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.6;
+}
+
+a { color: #2350a4; }
+a:hover, a:focus { color: #8b3d18; }
+
+.site-header {
+  color: white;
+  background: linear-gradient(135deg, var(--night), var(--purple));
+  border-bottom: 5px solid var(--gold);
+}
+
+.header-inner, .container {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
+
+.header-inner {
+  padding: 26px 0 18px;
+}
+
+.brand {
+  margin: 0;
+  color: var(--gold-light);
+  letter-spacing: 2px;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  text-shadow: 2px 2px 0 #000;
+}
+
+.tagline { margin: 0 0 18px; color: var(--muted); }
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.nav-list a {
+  display: inline-block;
+  padding: 8px 14px;
+  color: white;
+  text-decoration: none;
+  border: 1px solid #8274ba;
+  border-radius: 6px;
+}
+
+.nav-list a:hover, .nav-list a[aria-current="page"] {
+  color: var(--ink);
+  background: var(--gold);
+}
+
+main { padding: 42px 0; }
+
+.hero, .card, .feature, .quote, .form-panel {
+  background: var(--paper);
+  border: 1px solid #d0c4a1;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(35, 27, 63, .12);
+}
+
+.hero {
+  padding: clamp(28px, 6vw, 70px);
+  background: linear-gradient(120deg, rgba(255,250,240,.96), rgba(255,233,166,.92));
+}
+
+.hero h2 { max-width: 650px; margin-top: 0; font-size: clamp(2rem, 4vw, 3.8rem); line-height: 1.1; }
+.hero p { max-width: 680px; font-size: 1.15rem; }
+
+/* Styling for the requested <marquee>. The element is obsolete in HTML5,
+   so this keeps the example visually readable while the assignment requires it. */
+.duel-banner {
+  margin: 0 0 24px;
+  padding: 10px;
+  color: var(--ink);
+  background: var(--gold);
+  border: 2px solid #5405a3;
+  font-size: 25rem;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 17px;
+  color: var(--ink);
+  font-weight: bold;
+  text-decoration: none;
+  background: var(--gold);
+  border: 2px solid #956a13;
+  border-radius: 6px;
+}
+
+.button:hover { background: #fff1bd; }
+
+.section-heading { margin-top: 48px; color: var(--purple); font-size: 2rem; }
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.two-column { display: grid; grid-template-columns: 2fr 1fr; gap: 24px; align-items: start; }
+.card, .feature, .quote, .form-panel { padding: 24px; }
+.card h3, .feature h3 { margin-top: 0; color: var(--purple); }
+.symbol { font-size: 3rem; color: var(--gold); text-shadow: 2px 2px var(--purple); }
+
+.favorite-card {
+  max-width: 360px;
+  margin: 24px auto;
+  text-align: center;
+}
+
+.favorite-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 8px solid #8d6b2b;
+  border-radius: 8px;
+  box-shadow: 0 6px 14px rgba(14, 16, 32, .25);
+}
+
+.favorite-card figcaption { padding-top: 10px; font-weight: bold; }
+
+/* The <details> and <summary> elements below are MDN exploration features.
+   They create a keyboard-friendly expandable section without JavaScript. */
+details { margin: 14px 0; padding: 14px 18px; background: #f2effa; border-left: 5px solid var(--accent); }
+summary { cursor: pointer; color: var(--purple); font-weight: bold; }
+
+/* The <meter> element is another MDN exploration feature. This CSS adds spacing
+   around the visual progress meter used on the Strategies page. */
+meter { width: 100%; height: 22px; }
+
+.card-table { width: 100%; border-collapse: collapse; background: var(--paper); }
+.card-table caption { padding: 12px; color: var(--purple); font-weight: bold; text-align: left; }
+.card-table th, .card-table td { padding: 12px; border: 1px solid #cfc4aa; text-align: left; }
+.card-table th { color: white; background: var(--purple); }
+.card-table tr:nth-child(even) { background: #f4f0fb; }
+
+form label { display: block; margin-top: 16px; font-weight: bold; }
+input, textarea, select { width: 100%; padding: 10px; font: inherit; border: 1px solid #9d94b8; border-radius: 5px; }
+textarea { min-height: 130px; resize: vertical; }
+button { cursor: pointer; font: inherit; }
+.footer { padding: 28px 0; color: white; background: var(--night); text-align: center; }
+
+@media (max-width: 760px) {
+  .grid, .two-column { grid-template-columns: 1fr; }
+}

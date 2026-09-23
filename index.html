@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Duelist Journey | Yu-Gi-Oh!</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/jpeg" href="images/back-yugioh-card.jpeg">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <h1 class="brand">MY DUELIST JOURNEY</h1>
+      <p class="tagline">A personal hobby website about Yu-Gi-Oh!</p>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="cards.html">Card Collection</a></li>
+          <li><a href="strategies.html">Strategies</a></li>
+          <li><a href="community.html">Community</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- MDN element #1: <marquee> displays scrolling text.
+         It is obsolete in HTML5 because CSS animations are preferred for animation.-->
+    <marquee class="duel-banner"><strong>YU-Gi-Oh?!?!?!? Become The King Of Games<strong></marquee>
+
+    <!-- MDN element/attribute #2: <audio> embeds a sound file in the page.
+         The autoplay and loop attributes start the opening theme and repeat it.
+         Autoplay is not obsolete, but browsers may block audible autoplay, and
+         automatic sound can be disruptive; controls are included so visitors
+         can interact with the audio.-->
+    <audio autoplay loop controls>
+      <source src="media/duel-monsters-opening.mp3" type="audio/mpeg">
+      
+    </audio>
+
+    <section class="hero">
+      <p class="symbol" aria-hidden="true"></p>
+      <!-- MDN element #3: <big> makes text larger than the surrounding text.
+           It is obsolete in HTML5; CSS font-size is the modern replacement.
+           It is included here as a required legacy-element example. -->
+      <h2>Believe in the heart of the cards. <big>YU-Gi-Oh!</big></h2>
+      <p>Welcome to my Yu-Gi-Oh! hobby site. I created this space to share the cards, strategies, and memories that make dueling exciting for me.</p>
+      <a class="button" href="cards.html">Explore my collection</a>
+    </section>
+
+    <h2 class="section-heading">What you will find here</h2>
+    <section class="grid" aria-label="Website sections">
+      <article class="card">
+        <h3>Favorite Cards</h3>
+        <p>Meet the monsters that stand out in my collection.</p>
+        
+        <figure class="favorite-card">
+          <img src="images/GR-Black Rose.jpeg" alt="Black Rose Dragon Yu-Gi-Oh! trading card">
+          <figcaption>Black Rose Dragon</figcaption>
+        </figure>
+      </article>
+      <article class="card"><h3>Dueling Ideas</h3><p>Read beginner-friendly notes about deck building, combos, and decision-making.<br>Make sure to also check the <a href="hhttps://yugipedia.com/wiki/Master_Rule" title="Master Rules" target="_blank">Master Rule.</a></p>
+       <figure class="Dueling-Ideas">
+          <img src="images/master-rule.jpeg" alt="Yu-Gi-Oh Master Rule book">
+          <figcaption>Rule Book</figcaption>
+        </figure>
+      </article>
+      <article class="card"><h3>Community</h3><p>Going to local event or card shops that sell the product is a good place to start to learn the game. Online resources such as <b>YouTube</b> is also a good starting point to learn how to play.</p><figure class="Guide">
+          <img src="images/Guide-yugioh.jpg" alt="Yu-Gi-Oh guide">
+          <figcaption>Guide</figcaption>
+    </figure></article>
+    
+    </section>
+
+    <section class="quote" style="margin-top: 24px;">
+      <h2>Duelist Quote</h2>
+      <p>"Sometimes The End Of One Adventure Is Just The Beginning Of Another."</p>
+      <p><strong>— Yami Yugi</strong></p>
+    </section>
+  </main>
+
+  <footer class="footer"><p><a href="https://www.yugioh-card.com/en/" title="yugioh-card.com" target="_blank">KONAMI</a>
+    | Yu-Gi-Oh! is a registered trademark of its respective owners.</p></footer>
+</body>
+</html>
