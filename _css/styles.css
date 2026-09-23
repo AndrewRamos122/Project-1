@@ -146,13 +146,11 @@ main { padding: 42px 0; }
 
 .favorite-card figcaption { padding-top: 10px; font-weight: bold; }
 
-/* The <details> and <summary> elements below are MDN exploration features.
-   They create a keyboard-friendly expandable section without JavaScript. */
+
 details { margin: 14px 0; padding: 14px 18px; background: #f2effa; border-left: 5px solid var(--accent); }
 summary { cursor: pointer; color: var(--purple); font-weight: bold; }
 
-/* The <meter> element is another MDN exploration feature. This CSS adds spacing
-   around the visual progress meter used on the Strategies page. */
+
 meter { width: 100%; height: 22px; }
 
 .card-table { width: 100%; border-collapse: collapse; background: var(--paper); }
