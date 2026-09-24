@@ -4,6 +4,7 @@
    The colors are inspired by dark duel arenas, gold card borders,
    and the blue/purple colors commonly used in trading card designs.
 */
+
 :root {
   --ink: #17152b;
   --night: #0e1020;
@@ -20,7 +21,7 @@
 body {
   margin: 0;
   color: var(--ink);
-  background: #e7e3f0;
+  background: #5b23e7;
   font-family: Georgia, "Times New Roman", serif;
   line-height: 1.6;
 }
@@ -94,16 +95,16 @@ main { padding: 42px 0; }
 .hero p { max-width: 680px; font-size: 1.15rem; }
 
 /* Styling for the requested <marquee>. The element is obsolete in HTML5,
-it violates the foundational principles of modern web standards, primarily separation of concerns and web accessibility */
+   so this keeps the example visually readable while the assignment requires it. */
 .duel-banner {
   margin: 0 0 24px;
   padding: 10px;
   color: var(--ink);
   background: var(--gold);
-  border: 2px solid #956a13;
-  font-size: 1.4rem;
+  border: 2px solid #5405a3;
+  font-size: 25rem;
   font-weight: bold;
-  letter-spacing: 10px;
+  letter-spacing: 5px;
   text-align: center;
 }
 
@@ -142,41 +143,13 @@ it violates the foundational principles of modern web standards, primarily separ
   border-radius: 8px;
   box-shadow: 0 6px 14px rgba(14, 16, 32, .25);
 }
-.Dueling-Ideas {
-  max-width: 360px;
-  margin: 24px auto;
-  text-align: center;
-}
-
-.Dueling-Ideas img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border: 8px solid #8d6b2b;
-  border-radius: 8px;
-  box-shadow: 0 6px 14px rgba(14, 16, 32, .25);
-}
-.Guide {
-  max-width: 360px;
-  margin: 24px auto;
-  text-align: center;
-}
-
-.Guide img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border: 8px solid #8d6b2b;
-  border-radius: 8px;
-  box-shadow: 0 6px 14px rgba(14, 16, 32, .25);
-}
 
 .favorite-card figcaption { padding-top: 10px; font-weight: bold; }
-.Dueling-Ideas figcaption { padding-top: 10px; font-weight: bold; }
-.Guide figcaption { padding-top: 10px; font-weight: bold; }
+
 
 details { margin: 14px 0; padding: 14px 18px; background: #f2effa; border-left: 5px solid var(--accent); }
 summary { cursor: pointer; color: var(--purple); font-weight: bold; }
+
 
 meter { width: 100%; height: 22px; }
 
@@ -195,4 +168,3 @@ button { cursor: pointer; font: inherit; }
 @media (max-width: 760px) {
   .grid, .two-column { grid-template-columns: 1fr; }
 }
-
