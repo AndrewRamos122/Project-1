@@ -89,7 +89,23 @@ main { padding: 42px 0; }
 .hero p { max-width: 680px; font-size: 1.15rem; }
 
 /* Styling for the requested <marquee>. The element is obsolete in HTML5,
-it violates the foundational principles of modern web standards, primarily separation of concerns and web accessibility */
+here is an example of how it should be done in HTML 5:
+p {
+  animation-duration: 3s;
+  animation-name: slide-in;
+}
+
+@keyframes slide-in {
+  from {
+    translate: 150vw 0;
+    scale: 200% 1;
+  }
+
+  to {
+    translate: 0 0;
+    scale: 100% 1;
+  }
+} */
 .duel-banner {
   margin: 0 0 24px;
   padding: 10px;
